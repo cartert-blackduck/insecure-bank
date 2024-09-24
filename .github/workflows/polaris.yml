@@ -25,10 +25,10 @@ jobs:
         polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
         polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
         polaris_assessment_types: 'SAST,SCA'
-        #polaris_application_name: chuckaude-${{ github.event.repository.name }}
-        polaris_application_name: cartert-various
+        polaris_application_name: cartert-blackduck-github
+        polaris_project_name: cartert-insecure-bank
         # Enable GitHub workflow to upload a zipfile of source.
-        polaris_assessment_mode: "SOURCE_UPLOAD"
+        # polaris_assessment_mode: "SOURCE_UPLOAD"
         polaris_prComment_enabled: 'true'
         polaris_reports_sarif_create: 'true'
         polaris_upload_sarif_report: 'true'
